@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pivot News</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='../static/home.css'>
+    <link rel='icon' type='image/icon type' href='../static/assets/tabIcon.png'>
+</head>
+<body>
+    <div class="main__wrapper">
+        <main>
+            <h1>Pivot News</h1>
+            <aside>
+                <div>
+                    <div>V Manoj Sahit Reddy</div>
+                    <div>K V Krishna Paanchajanya</div>
+                    <div>K Deepak Chowdary</div>
+                </div>
+            </aside>
+            <h2 class="title--large main-title" id="politics1Title"></h2>
+            <div class="main-text multi-column">
+                <p id="politics1Summary"></p>
+            </div>
+            <a class="item-with-image plan span--2" href="#">
+                <h4 id="politics2Title" style='margin-top:0px;'></h4>
+                <div class="multi-column">
+                    <p id="politics2Summary"></p>
+                </div>
+            </a>
+            <a class="item-with-image pasta with-border" href="#">
+                <h4 id="business1Title"></h4>
+                <p id="business1Summary"></p>
+            </a>
+            <a class="item-with-image magazine with-border" href="#">
+                <h4 id="business2Title"></h4>
+                <p id="business2Summary"></p>
+            </a>
+            <a class="item-with-image style with-border" href="#">
+                <h4 id="sports1Title"></h4>
+                <p id="sports1Summary"></p>
+            </a>
+            <a class="item-with-image toggles with-border" href="#">
+                <h4 id="sports2Title"></h4>
+                <p id="sports2Summary"></p>
+            </a>
+            <a class="social" href="#" tagrget="_blank">
+                <div class="social__subtitle">World News</div>
+                <div class="social__content">Looks like Covid-19 is gonna be around for a while so here is another friendly reminder to practice social distancing. Oh, and wear a mask! </div>
+            </a>
+            <div class="item-with-image cssgrid-collection">
+                <div class="cssgrid-collection__content">
+                    <h4 id="sports3Title"></h4>
+                    <div class="multi-column-3">
+                        <p id="sports3Summary"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h3 class="title--big">Celebrities...</h3>
+                <a class="codepen-item pie" href="#">
+                    <div class="pie__subtitle">Latest</div>
+                    <div class="pie__content">
+                        <h4 id="celebrity1Title"></h4>
+                        <p id="celebrity1Summary"></p>
+                    </div>
+                </a>
+                <a class="sidebar-item captcha" href="#">
+                    <h5 id="celebrity2Title"></h5>
+                    <p id="celebrity2Summary"></p>
+                </a>
+            </div>
+        </main>
+        <button style='position:absolute;right:10px;top:10px;width:fit-content;height:20px; background-color: transparent;color:#1c1f33;' type="button" onclick="changeLanguage(this)">Translate to Hindi</button>
+        <button style='position:absolute;right:150px;top:10px;width:fit-content;height:20px; background-color: transparent;color:#1c1f33;' type="button" onclick="speak()">Speak</button>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script type='text/javascript' src='../static/home.js'></script>
+</body>
+</html>
