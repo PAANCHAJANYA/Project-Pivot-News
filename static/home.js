@@ -1,6 +1,5 @@
 var data;
 var language='English';
-var spoke = 0;
 $.getJSON('/getNews', function(content){
     data = content;
     if(data['English']['politician'].length >= 2)
@@ -109,21 +108,18 @@ function changeLanguage(ele)
 }
 function speak()
 {
-    console.log("Speak "+language);
-    if(spoke!=0)
-    {
-        $.getJSON("/stopSpeech");
-    }
-    else
-    {
-        spoke++;
-    }
+    var englishSpeech = document.getElementById("englishSpeech");
+    var hindiSpeech = document.getElementById("hindiSpeech");
+    englishSpeech.src = "http://localhost:5000/static/englishSpeech.wav";
+    hindiSpeech.src = "http://localhost:5000/static/hindiSpeech.wav";
+    englishSpeech.load();
+    hindiSpeech.load();
     if(language=='English')
     {
-        $.getJSON("/speak");
+        englishSpeech.play();
     }
     else
     {
-        $.getJSON("/speakHindi");
+        hindiSpeech.play();
     }
 }
