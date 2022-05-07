@@ -10,7 +10,7 @@ import wave
 
 translate = boto3.client('translate')
 polly = boto3.client('polly')
-lastUpdate = 21
+lastUpdate = 18
 currentDate = datetime.now()
 totalNews = {'English':{}, 'Hindi': {}}
 speakText = ""
@@ -27,9 +27,10 @@ def getNews():
     global speakTextHindi
     global currentDate
     global lastUpdate
-    if currentDate.hour>=lastUpdate and currentDate.hour<=lastUpdate+3:
+    if currentDate.hour>=lastUpdate and currentDate.hour<lastUpdate+3:
         return json.dumps(totalNews)
     else:
+        print(lastUpdate)
         nltk.download('punkt')
         config = Config()
         user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
@@ -58,7 +59,6 @@ def getNews():
         lastUpdate = lastUpdate + 3
         if lastUpdate==24:
             lastUpdate = 0
-        print(lastUpdate)
         SAMPLE_RATE = 16000
         CHANNELS = 1
         WAV_SAMPLE_WIDTH_BYTES = 2
