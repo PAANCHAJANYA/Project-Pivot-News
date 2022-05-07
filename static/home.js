@@ -110,8 +110,8 @@ function speak()
 {
     var englishSpeech = document.getElementById("englishSpeech");
     var hindiSpeech = document.getElementById("hindiSpeech");
-    englishSpeech.src = "http://localhost:5000/static/englishSpeech.wav";
-    hindiSpeech.src = "http://localhost:5000/static/hindiSpeech.wav";
+    englishSpeech.src = "static/englishSpeech.wav";
+    hindiSpeech.src = "static/hindiSpeech.wav";
     englishSpeech.load();
     hindiSpeech.load();
     if(language=='English')
