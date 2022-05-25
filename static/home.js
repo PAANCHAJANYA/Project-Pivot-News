@@ -2,6 +2,7 @@ var data;
 var language='English';
 $.getJSON('/getNews', function(content){
     data = content;
+    console.log(data);
     if(data['English']['politician'].length >= 2)
     {
         $("#politics1Title").text(data['English']['politician'][0]['title']);
@@ -110,8 +111,6 @@ function speak()
 {
     var englishSpeech = document.getElementById("englishSpeech");
     var hindiSpeech = document.getElementById("hindiSpeech");
-    englishSpeech.src = "static/englishSpeech.wav";
-    hindiSpeech.src = "static/hindiSpeech.wav";
     englishSpeech.load();
     hindiSpeech.load();
     if(language=='English')

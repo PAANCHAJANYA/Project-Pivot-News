@@ -52,10 +52,6 @@ p
 {
     line-height: 1.3;
 }
-p a
-{
-    display: inline;
-}
 .title--large
 {
     font-family: "Playfair Display", serif;
@@ -73,10 +69,6 @@ main .social
     grid-column: 1 / -2;
     grid-row: 8 / 9;
 }
-main .article-bar-1
-{
-    grid-row: span 4;
-}
 main .cssgrid-collection
 {
     grid-column: 1 / -1;
@@ -85,10 +77,6 @@ main .cssgrid-collection
 .span--2
 {
     grid-column: span 2;
-}
-.long--4
-{
-    grid-row: span 4;
 }
 .with-border
 {
@@ -134,13 +122,6 @@ aside > div > div
     line-height: 0;
     color: #eee;
     text-align: left;
-}
-.pie__image
-{
-    margin: 0;
-    border: 0;
-    max-height: 15rem;
-    object-fit: cover;
 }
 .pie__subtitle
 {
@@ -204,10 +185,6 @@ aside > div > div
     border-width: 1px 0;
     padding-bottom: 1rem;
 }
-.menu
-{
-    margin: 1.5rem 0;
-}
 .cssgrid-collection
 {
     display: flex;
@@ -239,14 +216,6 @@ aside > div > div
     grid-template-rows: max-content auto;
     color: #eee;
     text-align: left;
-}
-.social__image
-{
-    margin: 0;
-    border: 0;
-    grid-row: span 2;
-    height: 100%;
-    object-fit: cover;
 }
 .social__subtitle
 {
@@ -298,11 +267,6 @@ aside > div > div
     {
         font: 70px/1 "Playfair Display SC";
     }
-    main .menu
-    {
-        grid-column: 1 / -1;
-        grid-row: 13;
-    }
     .multi-column
     {
         column-count: 2;
@@ -337,11 +301,6 @@ aside > div > div
         grid-row: 3 / 9;
         grid-column: 5 / 6;
     }
-    main .menu
-    {
-        grid-row: 7 / 8;
-        grid-column: 2 / 4;
-    }
     .sidebar
     {
         display: block;
@@ -352,10 +311,6 @@ aside > div > div
     .captcha
     {
         margin-top: 0;
-    }
-    .menu
-    {
-        margin: 0;
     }
 }
 @media (min-width: 700px) and (max-width: 1024px)
