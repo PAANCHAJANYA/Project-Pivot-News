@@ -8,8 +8,8 @@ import nltk
 import json
 import wave
 
-translate = boto3.client('translate',aws_access_key_id="AKIAXWFOSO4OPOCZTHT7",aws_secret_access_key="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")
-polly = boto3.client('polly',aws_access_key_id="AKIAXWFOSO4OPOCZTHT7",aws_secret_access_key="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")
+translate = boto3.client('translate',aws_access_key_id="<IAM_ACCESS_KEY>",aws_secret_access_key="<IAM_SECRET_KEY>")
+polly = boto3.client('polly',aws_access_key_id="<IAM_ACCESS_KEY>",aws_secret_access_key="<IAM_SECRET_KEY>")
 lastUpdate = 18
 totalNews = {'English':{}, 'Hindi': {}}
 speakText = ""
